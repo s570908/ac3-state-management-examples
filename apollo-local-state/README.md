@@ -16,3 +16,7 @@ npm install && npm run start
 ```
 
 The app should start at `http://localhost:3000/`.
+
+## Reference URL
+
+https://www.apollographql.com/blog/dispatch-this-using-apollo-client-3-as-a-state-management-solution/

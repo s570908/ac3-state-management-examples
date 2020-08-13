@@ -9,6 +9,7 @@ import { GET_VISIBILITY_FILTER } from '../operations/queries/getVisibilityFilter
 import { todoMutations } from '../operations/mutations'
 
 export default function Main () {
+  console.log("function Main. useQuery(GET_ALL_TODOS) and useQuery(GET_VISIBILITY_FILTER) ");
   const todosQueryResult = useQuery(GET_ALL_TODOS);
   const visibilityFilterQueryResult = useQuery(GET_VISIBILITY_FILTER);
   const todos: Todos = todosQueryResult.data.todos;

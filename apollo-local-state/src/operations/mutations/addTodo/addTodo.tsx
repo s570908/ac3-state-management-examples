@@ -16,6 +16,8 @@ export default function createAddTodo (todosVar: ReactiveVar<Todos>) {
   
   return (text: string) => {
     const allTodos = todosVar();
+    console.log(" ");
+    console.log("function createAddTodo. write todoVar(new todo) ");
     todosVar(allTodos.concat([createNewTodo(text, allTodos)]));
   };
 }

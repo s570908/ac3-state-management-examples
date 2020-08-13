@@ -9,11 +9,13 @@ export const cache: InMemoryCache = new InMemoryCache({
       fields: {
         todos: {
           read () {
+            console.log("cacheQuery(todosVar) ", todosVar());
             return todosVar();
           }
         },
         visibilityFilter: {
           read () {
+            console.log("cacheQuery(visibilityFilterVar) ", visibilityFilterVar());
             return visibilityFilterVar();
           },
         }

@@ -3,13 +3,16 @@ import PropTypes from 'prop-types'
 import TodoItem from './TodoItem'
 import { Todo } from '../models/Todos'
 
-const TodoList = ({ filteredTodos, actions }: any) => (
+const TodoList = ({ filteredTodos, actions }: any) => {
+  console.log("TodoList renering. ");
+  return (
   <ul className="todo-list">
     {filteredTodos.map((todo: Todo) =>
       <TodoItem key={todo.id} todo={todo} {...actions} />
     )}
   </ul>
-)
+  )
+};
 
 TodoList.propTypes = {
   filteredTodos: PropTypes.arrayOf(PropTypes.shape({
